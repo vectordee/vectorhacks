@@ -1,0 +1,209 @@
+/* 
+
+---01 TYPOGRAPHY SYSTEM
+
+- FONT SIZES (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+- Font-weights:
+Default: 400
+Medium: 400
+Semi-Bold: 600
+Bold: 800
+
+- Line-heights:
+Default: 1.15
+Small: 1.05
+Paragraph Default: 1.5
+paragraph Medium: 1.3
+
+ 
+--- 02 COLORS
+
+
+# Primary: #b85d7a
+- Tints: #c1718a, #cd8ea2, #fcc2d7, ;
+- Shades:#ffdeeb, (#fff0f6 used only in features-title & subscribe form)
+- Accents:
+
+- Greys: #adb5bd(Grey used for nav-links and paragraph inside header)
+
+#Secondary: #323a4b
+
+
+
+--- 05 SHADOWS
+- Default: box-shadow: 0 0 32px 0px rgba(0, 0, 0, 0.1)
+- Secondary: box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.2);
+
+--- 06 BORDER-RADIUS
+- Default: 10px
+- Meduium: 8px
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #b85d7a;
+
+  /* overflow-x: hidden; */
+  /* font-family: "Inter", sans-serif; */
+}
+
+/*************************/
+/* REUSABLE STYLES */
+/*************************/
+
+/* CONTAINER TO GIVE SECTIONS THE SAME WIDTH & MARGINS */
+.container {
+  margin: 0 auto;
+  max-width: 120rem;
+}
+
+/* GRIDS */
+
+.grid {
+  display: grid;
+  column-gap: 4.8rem;
+}
+
+/* GRID-COLUMNS */
+
+.grid-4-cols {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid-2-cols {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-cols {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* HEADINGS */
+.heading-primary {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #323a4b;
+  padding: 2rem;
+}
+
+.heading-tertiary {
+  font-size: 3.2rem;
+  color: #ffdeeb;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  /* padding: 20px; */
+}
+
+/* PARAGRAPHS/TEXTS*/
+
+.testimonial-text,
+.how-text,
+.subscribe-text,
+.article-paragraph {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fcc2d7;
+}
+
+.article-paragraph {
+  max-width: 70rem;
+}
+
+/* BUTTONS */
+
+.btn-small,
+.btn:link,
+.btn:visited {
+  border: none;
+  background-color: #323a4b;
+  text-transform: uppercase;
+  padding: 2rem 5rem;
+  cursor: pointer;
+  color: #fcc2d7;
+  font-family: "Inter", sans-serif;
+
+  text-decoration: none;
+  border-radius: 10px;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.btn:link,
+.btn:visited {
+  font-size: 2.4rem;
+  /* position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -150%); */
+  /*margin-top: 100px;
+  margin-left: 500px; */
+}
+
+.btn:hover,
+.btn:active {
+  color: #cd8ea2;
+  background-color: #474e5d;
+}
+
+.btn-small {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  border-radius: 8px;
+  align-self: flex-end;
+  color: #fcc2d7;
+  transition: none;
+}
+
+.btn-small:hover {
+  color: #cd8ea2;
+  background-color: #474e5d;
+}
+
+.btn-small:active {
+  transform: scale(0.95);
+}
+
+/* MARGIN-BOTTOMS */
+
+.margin-bg {
+  margin-bottom: 9.6rem !important;
+}
+
+.margin-md {
+  margin-bottom: 3.2rem !important;
+}
+
+.margin-sm {
+  margin-bottom: 1.2rem !important;
+}
+
+/* PADDINGS */
+
+.padding-helper {
+  padding: 2rem;
+}
